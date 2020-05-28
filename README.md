@@ -1,7 +1,7 @@
 # interactive_ms_project
 
  
-# interactive_milestone_project
+# HORIZON TRAVELS
 
 
 Website can be found here: 
