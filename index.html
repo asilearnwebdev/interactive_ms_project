@@ -274,7 +274,24 @@
             <input id="pac-input" class="controls" type="text" placeholder="Search Box">
             <div id="map"></div></div>
             
-            
+             <!-- CONTACT FORM -->
+            <div class="main" id="section4">
+              <div class="contact">
+                <div class="container-fluid text-center">
+                  <form id="myform" onsubmit="emailjs.sendForm('default_service', 'contact', this); return false;" method="post">
+                    <label><h4>Name</h4></label>
+                    <input type="text" name="from_name" />
+                    <label><h4>Email</h4></label>
+                    <input type="text" name="from_email" />
+                    <label><h4>Holiday Request<h4></label>
+                    <input type="text" name="holiday_request" />
+                    <br><br>
+                    <button>
+                    Send
+                    </button>
+                  </form>
+                </div>
+              </div>
             <!--FOOTER START-->
             <footer class="container-fluid text-center">
               
@@ -293,6 +310,12 @@
             <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
             <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs7hOrNfyDqeonB1aQ-iCyb5aRK3FkDNU&libraries=places&callback=initAutocomplete" defer></script>
-            
+             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+              <script type="text/javascript">
+              (function(){
+              emailjs.init("user_VQzbH180G8nTOeAgWYYdU");
+              })();
+              </script>
+              
           </body>
         </html>
